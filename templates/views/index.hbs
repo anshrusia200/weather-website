@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/style.css">
+
+</head>
+<body>
+    <h1>{{title}}</h1>
+
+    {{>header}}
+    
+    <br>
+    
+    <form>
+        <input type="text" id="address" placeholder="location">
+        <button type="submit">Search</button>
+    </form>
+     <div id="weather">
+         <p><b>Location : </b><p id="location">Please enter a location</p></p>
+         <p><b>Temperature : </b><p id="temp">-</p></p>
+     </div>
+    {{>footer}}
+
+    <script src="/js/app.js"></script>
+</body>
+</html>
